@@ -23,11 +23,13 @@ public class WsApplication{
 
 		return (args) -> {
 				System.out.println("Command Line runner");
-				User user = new User();
-				user.setUsername("Osman2");
-				user.setPassword("123456");
-				user.setDisplayName("Ossiss");
-				userService.save(user);
+				for(int i = 1 ; i <= 10 ; i++ ){
+					User user = new User();
+					user.setUsername("Osman" + i);
+					user.setPassword("123456");
+					user.setDisplayName("Ossiss" + i);
+					userService.save(user);
+				}
 		};
 	}
 

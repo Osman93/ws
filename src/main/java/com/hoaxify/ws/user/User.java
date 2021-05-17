@@ -1,6 +1,7 @@
 package com.hoaxify.ws.user;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.hoaxify.ws.shared.Views;
 import lombok.Data;
